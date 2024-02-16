@@ -1,0 +1,21 @@
+
+
+.container{
+    background-color: pink;
+  color: blue;
+}
+.container-a{
+    height: 200px;
+}
+.ckeck-box{
+    display: flex;
+    gap: 30px;
+}
+.a{
+    width: 2rem;
+}
+.reds{
+    color: red;
+    font-size: 22px;
+    background-color: rgb(100, 100, 100);
+}

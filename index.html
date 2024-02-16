@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="yao" content="iATER">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My website</title>
+    <link rel="stylesheet" href="./style.css" />
+
 </head>
+
 <body>
-    <h1>hello world</h1>
-    <h1>hello Yao</h1>
+    <div class="header_wrap" id="wrap" onclick="changeColor(this)">
+        <h1>Wellcome to my Site</h1>
+        <p>My name is YAO</p>
+        <img title="Football" src="./stiackman2.webp" alt="stiackman-image">
+    </div>
+
+    <!-- <ul>
+        <li>Welcome</li>
+        <li>Welcome1 </li>
+        <li class="li--name">My name is <span class="li--name">Yao</span></li>
+    </ul> -->
+    <ol>
+        <li class="whited">White</li>
+        <li class="ol_a">Black</li>
+        <li>Red</li>
+
+    </ol>
+    <div>
+       
+            <div>
+                <input placeholder="ID:" type="text" id="ids">
+            </div>
+            <div>
+                <input placeholder="Email:" type="text" id="emmail">
+            </div>
+            <div>
+                <textarea placeholder="Descrapture:" type="text" id="text"></textarea> 
+            </div>
+            <button onclick="myFunction() ">Button</button>
+       
+            <p id="ids_value"></p>
+            <p id="email_value"></p>
+            <p id="des_value"></p>
+    </div>
 </body>
+ <script>
+    // document.getElementById("myform").addEventListener(function "submit" )
+    function myFunction() {
+        var ids = document.getElementById("ids").value;
+        var email = document.getElementById("emmail").value;
+        var text = document.getElementById("text").value;
+    
+
+        document.getElementById("ids_value").textContent = "ID: " + ids ;
+        document.getElementById("email_value").textContent = "Email: " + email ;
+        document.getElementById("des_value").textContent = "Descripture: " + text ;
+    }
+    function changeColor(element) {
+  // Toggle the 'clicked' class on the clicked box
+        element.classList.toggle('clicked');
+    }
+ </script>
 </html>

@@ -1,0 +1,54 @@
+div{
+    /* text-align: center; */
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+    background-color: rgba(226, 194, 247, 0.459);
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+ul,ol{
+    background-color: rgb(243, 243, 243);
+    display: flex;
+}
+li{
+   list-style: none;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+}
+span.li--name{
+    color: red;
+}
+li > .li--name{
+    color: rgb(224, 132, 132);
+}
+.ol_a~li{
+    color: rgb(150, 139, 139);
+}
+.ol_a+li:active {
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+/* .header_wrap:hover {
+    background:black;
+} */
+/* .header_wrap:active{
+    background-color: rgb(255, 255, 255);
+} */
+input{
+    height: 2rem !important;
+    width: 50%;
+    outline: none;
+}
+textarea{
+    width: 50%;
+    height: 4rem;
+}
+
+.clicked {
+    background-color: blue;
+    color: white;
+  }
