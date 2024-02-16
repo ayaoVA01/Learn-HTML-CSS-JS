@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fontawesome.com/license/free">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  opacity: 0.5;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  background-image: url("./stiackman2.webp");
+  background-position: right top 40%;
+  background-repeat: no-repeat;
+  
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+  border-bottom-right-radius:100px;
+  /* position: absolute;
+  z-index: 0; */
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  
+}
+nav ul li{
+  padding: 10px;
+  
+}
+
+article {
+  background-image: url("./web/aa.jpg");
+  background-size: cover;
+  border-top-left-radius:100px ;
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  color: rgb(255, 255, 255);
+  height: 300px; /* only for demonstration, should be removed */
+  
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+  color: #363535;
+}
+
+/* Style the footer */
+footer {
+  background-color: #969696e1;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+footer img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 6rem;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+/* ul li:last-child{
+  background-color: #f80000;
+}
+
+ul li:nth-child(2){
+  background-color: #f80000;
+}
+
+ul *:nth-child(2){
+  background-color: #fa0000;
+} */
+
+
+.contact{
+  padding:10px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+}
+.contact a {
+  text-decoration: none;
+  color: blue;
+
+}
+.p_tag::after{
+  content: "YAO";
+  color: rgb(0, 4, 255);
+  
+}
+.p_tag{
+  width: 400px;
+  height: 100px;
+  border: 0px solid #c6c6c7;
+  padding: 20px;
+  border-radius: 5px;
+}
+.box-contact{
+  padding-top: 10px;
+  height: 3rem;
+  position: sticky;
+  box-shadow: 0 0 0.4 black;
+  top: 0px;
+  background-color: rgb(253, 173, 173);
+  z-index: 100;
+}
+.cal{
+  float: right;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+  <div class="box-contact">
+    <a href="#" class="cal">Call me</a>
+    <div class="contact">
+      <a href="https://www.facebook.com/txntsg.jelve" target="_blank">Facebook </a>
+      <a href="#">Instagram</a>
+      <a href="#">Whatsapp</a>
+      <a href="#">Messager</a>
+    </div>
+    
+</div>
+<div>
+
+  <h2 class="layout">CSS Layout Float</h2>
+  <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+  <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+</div>
+
+<header>
+  <h2>KOREA<hr></h2>
+  
+</header>
+
+<section>
+
+    <nav>
+      <ul>
+        <li><a href="#">London</a>  </li>
+        <li><a href="#">Paris</a></li>
+        <li><a href="#">Tokyo</a></li>
+      </ul>
+    </nav>
+
+  
+  <article>
+    <h1 class="kk">London</h1>
+    <p class="p_tag">London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p >Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+
+
+  <h2>LAOS</h2>
+  
+
+<footer>
+  <img src="./stiackman2.webp" alt="">
+  <p>Coppyright by yao</p>
+</footer>
+
+</body>
+</html>
+
