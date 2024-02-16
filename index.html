@@ -11,6 +11,49 @@
 </head>
 
 <body>
+<style>
+    
+.contact{
+  padding:10px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+}
+.contact a {
+  text-decoration: none;
+  color: blue;
+
+}
+.contact a:hover {
+  text-decoration: none;
+  color: rgb(107, 107, 138);
+
+}
+.box-contact{
+  padding-top: 10px;
+  height: 3rem;
+  position: sticky;
+  box-shadow: 0 0 0.4 black;
+  top: 0px;
+  background-color: rgb(146, 146, 146);
+  z-index: 100;
+}
+.cal{
+  float: right;
+  padding: 10px;
+}
+</style>
+    <div class="box-contact">
+        <a href="#" class="cal">Call me</a>
+        <div class="contact">
+          <a href="web/index.html" >Korean Web </a>
+          <a href="./page2.html">Home</a>
+          <a href="./page3.html">About</a>
+          <a href="./school.html">Contact</a>
+        </div>
+        
+    </div>
+
+
     <div class="header_wrap" id="wrap" onclick="changeColor(this)">
         <h1>Wellcome to my Site</h1>
         <p>My name is YAO</p>
